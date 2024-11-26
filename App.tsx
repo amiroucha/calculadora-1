@@ -4,6 +4,7 @@ import { Pantalla } from './src/components/Pantalla';
 import { Pantalla2 } from './src/components/Pantalla2';
 import { BotonOperacion } from './src/components/BotonOperacion';
 import { useCalculadora } from './src/hooks/useCalculadora';
+import { StyleScreen } from './src/theme/StyleScreen';
 
 export default function App() {
 
@@ -12,7 +13,7 @@ export default function App() {
 
   return (
   
-    <View style={styles.container}>    
+    <View style={StyleScreen.container}>    
       <Pantalla numberOfLines={1} adjustsFontSizeToFit>{formula}</Pantalla>
 
       {formula === numeroAnterior ? (
