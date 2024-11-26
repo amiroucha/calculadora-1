@@ -1,4 +1,5 @@
 import { Pressable, Text, StyleSheet } from "react-native";
+import { StyleScreen } from '../theme/StyleScreen';
 
 interface Props {
     label: string,
@@ -10,12 +11,12 @@ export const BotonOperacion = ({label, width, onPress}:Props) => {
     return (
         <Pressable>
             <Text 
-                style={[styles.boton, {width}]}
+                style={[StyleScreen.boton, {width}]}
                 onPress={onPress}>{label}</Text>
         </Pressable>
     )
 };
-
+/*
 const styles = StyleSheet.create({
     boton: {
         width:80,
@@ -23,7 +24,7 @@ const styles = StyleSheet.create({
         padding: 10,
         fontSize: 30,
         fontWeight: 300,
-        borderColor: 'black',
+        borderColor: 'white',
         borderWidth: 2,
     }
-  });
+  });*/

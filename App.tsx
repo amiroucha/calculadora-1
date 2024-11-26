@@ -13,17 +13,15 @@ export default function App() {
   return (
   
     <View style={StyleScreen.container}>    
-    --tamaño grande de ls numeros que escribes--
+   
       <Pantalla tamanio = 'grande' numberOfLines={1} adjustsFontSizeToFit>{formula}</Pantalla>
-      --las letras del resultado--
+
       {formula === numeroAnterior ? (
-        <Pantalla tamanio = 'peque' numberOfLines={1} adjustsFontSizeToFit> </Pantalla>
+        <Pantalla tamanio = 'peque' numberOfLines={1} adjustsFontSizeToFit></Pantalla>
       ) : (
         <Pantalla tamanio = 'peque' numberOfLines={1} adjustsFontSizeToFit>{numeroAnterior}</Pantalla>
       )}
-      
-     
-      
+   
       
       <StatusBar style="auto" />
 

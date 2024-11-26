@@ -21,12 +21,23 @@ pantallaPrincipal: {
     textAlign: 'right',
     fontWeight:400,
     width: '90%',
+    color: Colors.white,
     
 },
 pantallaSecundaria: {
     fontSize: 40,
     textAlign: 'right',
     width: '90%',
+    color: Colors.white,
 },
+boton: {
+    width:80,
+    textAlign: 'center',
+    padding: 10,
+    fontSize: 30,
+    fontWeight: 300,
+    borderColor: Colors.white,
+    borderWidth: 2,
+}
 
 })
