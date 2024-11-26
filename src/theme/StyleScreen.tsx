@@ -2,7 +2,8 @@ import { StyleSheet } from "react-native";
 import { Colors } from "./Colors";
 
 export const StyleScreen =  StyleSheet.create({
-constainer:{
+container:{
+    backgroundColor: Color.background,
 
 
 },
