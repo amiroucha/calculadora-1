@@ -4,10 +4,11 @@ import { Colors } from "./Colors";
 export const StyleScreen =  StyleSheet.create({
 container:{
     flex: 1,
-    backgroundColor: Colors.black,
+    backgroundColor: Colors.darkGray,
     alignItems:  'center',
     justifyContent: 'flex-end',
     paddingBottom:20,
+    color: Colors.white,
 },
 fila: {
     flexDirection: 'row',
@@ -38,6 +39,8 @@ boton: {
     fontWeight: 300,
     borderColor: Colors.white,
     borderWidth: 2,
+    color: Colors.white,
+    backgroundColor: Colors.green
 }
 
 })

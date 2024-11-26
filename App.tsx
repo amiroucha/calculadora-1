@@ -8,7 +8,7 @@ import { StyleScreen } from './src/theme/StyleScreen';
 export default function App() {
 
   const {formula, numeroAnterior, construirNumero, clean, cambiarSigno, borrarDigito,
-         operacionDividir, operacionMultiplicar, operacionRestar, operacionSumar,resultado  } = useCalculadora();
+         operaciones, Operadores ,resultado  } = useCalculadora();
 
   return (
   
@@ -26,33 +26,33 @@ export default function App() {
       <StatusBar style="auto" />
 
     <View style={StyleScreen.fila}>
-      <BotonOperacion label='C' width={80} onPress={clean}></BotonOperacion>
-      <BotonOperacion label='+/-' width={80} onPress={cambiarSigno}></BotonOperacion>
-      <BotonOperacion label='del' width={80} onPress={borrarDigito}></BotonOperacion>
-      <BotonOperacion label='/' width={80} onPress={operacionDividir}></BotonOperacion>
+      <BotonOperacion label='C' onPress={clean}></BotonOperacion>
+      <BotonOperacion label='+/-' onPress={cambiarSigno}></BotonOperacion>
+      <BotonOperacion label='del' onPress={borrarDigito}></BotonOperacion>
+      <BotonOperacion label='/' onPress={() =>operaciones(Operadores.dividir)}></BotonOperacion>
     </View>
     <View style={StyleScreen.fila}>
-      <BotonOperacion label='7' width={80} onPress={() =>construirNumero('7')}></BotonOperacion>
-      <BotonOperacion label='8' width={80} onPress={() =>construirNumero('8')}></BotonOperacion>
-      <BotonOperacion label='9' width={80} onPress={() =>construirNumero('9')}></BotonOperacion>
-      <BotonOperacion label='x' width={80} onPress={operacionMultiplicar}></BotonOperacion>
+      <BotonOperacion label='7' onPress={() =>construirNumero('7')}></BotonOperacion>
+      <BotonOperacion label='8' onPress={() =>construirNumero('8')}></BotonOperacion>
+      <BotonOperacion label='9' onPress={() =>construirNumero('9')}></BotonOperacion>
+      <BotonOperacion label='x' onPress={() =>operaciones(Operadores.multiplicar)}></BotonOperacion>
     </View>
     <View style={StyleScreen.fila}>
-      <BotonOperacion label='4' width={80} onPress={() =>construirNumero('4')}></BotonOperacion>
-      <BotonOperacion label='5' width={80} onPress={() =>construirNumero('5')}></BotonOperacion>
-      <BotonOperacion label='6' width={80} onPress={() =>construirNumero('6')}></BotonOperacion>
-      <BotonOperacion label='-' width={80} onPress={operacionRestar}></BotonOperacion>
+      <BotonOperacion label='4' onPress={() =>construirNumero('4')}></BotonOperacion>
+      <BotonOperacion label='5' onPress={() =>construirNumero('5')}></BotonOperacion>
+      <BotonOperacion label='6' onPress={() =>construirNumero('6')}></BotonOperacion>
+      <BotonOperacion label='-' onPress={() =>operaciones(Operadores.restar)}></BotonOperacion>
     </View>
     <View style={StyleScreen.fila}>
-      <BotonOperacion label='1' width={80} onPress={() =>construirNumero('1')}></BotonOperacion>
-      <BotonOperacion label='2' width={80} onPress={() =>construirNumero('2')}></BotonOperacion>
-      <BotonOperacion label='3' width={80} onPress={() =>construirNumero('3')}></BotonOperacion>
-      <BotonOperacion label='+' width={80} onPress={operacionSumar}></BotonOperacion>
+      <BotonOperacion label='1' onPress={() =>construirNumero('1')}></BotonOperacion>
+      <BotonOperacion label='2' onPress={() =>construirNumero('2')}></BotonOperacion>
+      <BotonOperacion label='3' onPress={() =>construirNumero('3')}></BotonOperacion>
+      <BotonOperacion label='+' onPress={() =>operaciones(Operadores.sumar)}></BotonOperacion>
     </View>
     <View style={StyleScreen.fila}>
       <BotonOperacion label='0' width={180} onPress={() =>construirNumero('0')}></BotonOperacion>
-      <BotonOperacion label='.' width={80} onPress={() =>construirNumero('.')}></BotonOperacion>
-      <BotonOperacion label='=' width={80} onPress={resultado}></BotonOperacion>
+      <BotonOperacion label='.' onPress={() =>construirNumero('.')}></BotonOperacion>
+      <BotonOperacion label='=' onPress={resultado}></BotonOperacion>
     </View>
     </View>
 

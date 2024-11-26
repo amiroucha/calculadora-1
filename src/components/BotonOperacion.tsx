@@ -3,11 +3,11 @@ import { StyleScreen } from '../theme/StyleScreen';
 
 interface Props {
     label: string,
-    width: number,
+    width?: number,
     onPress?: () => void;
 }
 
-export const BotonOperacion = ({label, width, onPress}:Props) => {
+export const BotonOperacion = ({label, width = 80, onPress}:Props) => {
     return (
         <Pressable>
             <Text 
