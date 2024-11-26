@@ -7,7 +7,7 @@ export const Pantalla2 = ({children, ...rest}:Props) => {
     <Text style={styles.pantallaPrincipal} {...rest}>
         {children}
     </Text>
-  )
+  ) 
 }
 
 const styles = StyleSheet.create({

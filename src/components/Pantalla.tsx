@@ -9,7 +9,7 @@ export const Pantalla = ({children, ...rest}:Props) => {
     </Text>
   )
 }
-
+ 
 const styles = StyleSheet.create({
     pantallaPrincipal: {
         fontSize: 70,
