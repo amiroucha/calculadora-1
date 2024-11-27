@@ -12,4 +12,4 @@ export const Pantalla = ({children,tamanio, ...rest}:Props) => {
       {children}
     </Text>
   )
-}
+}  

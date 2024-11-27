@@ -40,7 +40,15 @@ boton: {
     borderColor: Colors.white,
     borderWidth: 2,
     color: Colors.white,
+},
+btnNumero:{
     backgroundColor: Colors.green
+},
+btnOperations:{
+    backgroundColor: Colors.lightGray,
+},
+btnOthers:{
+    backgroundColor: Colors.darkGray,
 }
 
 })
