@@ -1,4 +1,5 @@
 # Calculadora 
+Nombre del autor: Chaimae Amirou el Adami
 
 ## Bienvenido. Empezamos el proceso
 
