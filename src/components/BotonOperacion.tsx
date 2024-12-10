@@ -24,7 +24,7 @@ export const BotonOperacion = ({label, width = 80, color, onPress}:Props) => {
             <Text 
                 style={[StyleScreen.boton,
                     {width},
-                    color === 'operacion' ?StyleScreen.btnOperations:null, color ==='numero' ?StyleScreen.btnOthers:null, color === 'avanzado' ?StyleScreen.boton:null
+                    color === 'operacion' ?StyleScreen.btnOperations:null, color ==='numero' ?StyleScreen.btnNumero:null, color === 'avanzado' ?StyleScreen.btnOthers:null
                 ]}
                 onPress={accion}>{label}</Text>
         </Pressable>

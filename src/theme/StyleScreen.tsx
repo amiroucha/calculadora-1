@@ -4,7 +4,7 @@ import { Colors } from "./Colors";
 export const StyleScreen =  StyleSheet.create({
 container:{
     flex: 1,
-    backgroundColor: Colors.darkGray,
+    backgroundColor: Colors.backColor,
     alignItems:  'center',
     justifyContent: 'flex-end',
     paddingBottom:20,
@@ -18,7 +18,7 @@ fila: {
     width: '100%',
 },
 pantallaPrincipal: {
-    fontSize: 70,
+    fontSize: 80,
     textAlign: 'right',
     fontWeight:400,
     width: '90%',
@@ -26,7 +26,7 @@ pantallaPrincipal: {
     
 },
 pantallaSecundaria: {
-    fontSize: 40,
+    fontSize: 55,
     textAlign: 'right',
     width: '90%',
     color: Colors.white,
@@ -40,15 +40,16 @@ boton: {
     borderColor: Colors.white,
     borderWidth: 2,
     color: Colors.white,
+    borderRadius: 6
 },
 btnNumero:{
-    backgroundColor: Colors.green
+    backgroundColor: Colors.blue
 },
 btnOperations:{
-    backgroundColor: Colors.lightGray,
+    backgroundColor: Colors.grayLight,
 },
 btnOthers:{
-    backgroundColor: Colors.darkGray,
+    backgroundColor: Colors.violet,
 }
 
 })
