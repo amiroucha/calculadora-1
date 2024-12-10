@@ -34,7 +34,7 @@ Para obtener más información sobre cómo desarrollar su proyecto con Expo, con
 - [Documentación de la Expo](https://docs.expo.dev/): aprenda los fundamentos o profundice en temas avanzados con nuestras [guías](https://docs.expo.dev/guides).
 - [Tutorial de Learn Expo](https://docs.expo.dev/tutorial/introduction/): siga un tutorial paso a paso en el que creará un proyecto que se ejecuta en Android, iOS y la web.
 
-- ## Únete a la comunidad
+## Únete a la comunidad
 Únase a nuestra comunidad de desarrolladores que crean aplicaciones universales.
 
 - [Expo en GitHub](https://github.com/expo/expo): vea nuestra plataforma de código abierto y contribuya.
