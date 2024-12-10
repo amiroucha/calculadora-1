@@ -33,7 +33,8 @@ Este comando moverá el código de inicio al directorio **app-example** y crear�
 Para obtener más información sobre cómo desarrollar su proyecto con Expo, consulte los siguientes recursos:
 - [Documentación de la Expo](https://docs.expo.dev/): aprenda los fundamentos o profundice en temas avanzados con nuestras [guías](https://docs.expo.dev/guides).
 - [Tutorial de Learn Expo](https://docs.expo.dev/tutorial/introduction/): siga un tutorial paso a paso en el que creará un proyecto que se ejecuta en Android, iOS y la web.
-
+## REsultado de la calculadora
+![Imagen 1: Calculadora sin hacer operaciones:](/assets/calculadoraFoto.jpg)
 ## Únete a la comunidad
 Únase a nuestra comunidad de desarrolladores que crean aplicaciones universales.
 
