@@ -1,6 +1,7 @@
 import { Pressable, Text, StyleSheet, type TextProps } from "react-native";
 import { StyleScreen } from '../theme/StyleScreen';
 import { Colors } from "react-native/Libraries/NewAppScreen";
+import * as Haptics from 'expo-haptics';
 
 interface Props {
     label: string,
@@ -10,6 +11,14 @@ interface Props {
 }
 
 export const BotonOperacion = ({label, width = 80, color, onPress}:Props) => {
+
+    const accion = (() => {
+        if (onPress) onPress()
+        Haptics.selectionAsync();
+
+      })
+    
+
     return (
         <Pressable>
             <Text 
@@ -17,7 +26,7 @@ export const BotonOperacion = ({label, width = 80, color, onPress}:Props) => {
                     {width},
                     color === 'operacion' ? StyleScreen.btnOperations:null, color ==='numero' ? StyleScreen.btnOthers:null, color === 'avanzado' ? StyleScreen.boton:null,
                 ]}
-                onPress={onPress}>{label}</Text>
+                onPress={accion}>{label}</Text>
         </Pressable>
     )
 };
