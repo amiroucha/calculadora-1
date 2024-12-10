@@ -28,7 +28,7 @@ npm run reset-project
 
 Este comando moverá el código de inicio al directorio **app-example** y creará un directorio **app** en blanco donde podrá comenzar a desarrollar.
 
-## Learn more
+## Aprende más
 
 Para obtener más información sobre cómo desarrollar su proyecto con Expo, consulte los siguientes recursos:
 - [Documentación de la Expo](https://docs.expo.dev/): aprenda los fundamentos o profundice en temas avanzados con nuestras [guías](https://docs.expo.dev/guides).
