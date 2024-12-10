@@ -20,8 +20,8 @@ En el resultado, encontrará opciones para abrir la aplicación en:
 
 Puedes empezar a desarrollar editando los archivos dentro del directorio **app**. Este proyecto utiliza [enrutamiento basado en archivos] (https://docs.expo.dev/router/introduction).
 
-##Obten un nuevo proyecto 
-Cuando estés listo, ejecuta:
+## Crea un nuevo proyecto 
+Cuando lo tengas listo, ejecuta:
 ```bash
 npm run reset-project
 ```
