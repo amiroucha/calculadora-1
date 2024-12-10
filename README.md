@@ -1,12 +1,12 @@
-##Bienvenido a tu aplicación Expo 
+# Calculadora 
 
-## Empezamos el proceso
+## Bienvenido. Empezamos el proceso
 
-1.Instala las dependencias
+1. Instala las dependencias
    ```bash
    npm install
    ```
-2.Inicia la app
+2. Inicia la app
    ```bash
     npx expo start
    ```
