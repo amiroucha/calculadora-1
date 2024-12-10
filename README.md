@@ -9,7 +9,7 @@ Nombre del autor: Chaimae Amirou el Adami
    ```
 2. Inicia la app
    ```bash
-    npx run start
+    npm run start
    ```
 En el resultado, encontrará opciones para abrir la aplicación en:
 
